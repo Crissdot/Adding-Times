@@ -7,10 +7,15 @@ function addTimes(times) {
             const sec = timeSplit[1];
             sumSeconds += convertTimeToSeconds(sec, min);
         }
+        if(timeSplit.length === 3) {
+            const h = timeSplit[0];
+            const min = timeSplit[1];
+            const sec = timeSplit[2];
+            sumSeconds += convertTimeToSeconds(sec, min, h);
+        }
     });
     const [hours, minutes, seconds] = makeFormat(sumSeconds);
-    const msg = `${hours}:${minutes}:${seconds}`;
-    console.log(msg);
+    return `${hours}:${minutes}:${seconds}`;
 }
 
 function makeFormat(seconds) {
@@ -42,5 +47,5 @@ function convertStringToNumber(str) {
     return parseInt(str);
 }
 
-const test = new Array('25:15', '18:57');
-addTimes(test);
+const test = new Array('1:25:15', '1:18:57', '10:0');
+console.log(addTimes(test));
