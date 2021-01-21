@@ -11,5 +11,13 @@
     "javascript"
   ],
   "author": "Crissdot <crissdotdev@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crissdot/Adding-Times.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Crissdot/Adding-Times/issues"
+  },
+  "homepage": "https://github.com/Crissdot/Adding-Times#readme"
 }

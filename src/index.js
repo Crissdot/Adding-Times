@@ -49,3 +49,6 @@ function convertStringToNumber(str) {
 
 const test = new Array('1:25:15', '1:18:57', '10:0');
 console.log(addTimes(test));
+
+
+module.exports = { addTimes };
