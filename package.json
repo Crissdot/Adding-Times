@@ -1,6 +1,6 @@
 {
   "name": "@crissdot/adding-times",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A function that receives an Array of strings with HH:mm:ss format and returns the sum of the values",
   "main": "src/index.js",
   "scripts": {
